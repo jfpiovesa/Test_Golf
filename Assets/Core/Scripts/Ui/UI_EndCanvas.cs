@@ -36,11 +36,12 @@ public class UI_EndCanvas : MonoBehaviour
     }
     public void LoadingMenu()
     {
-        
+        ClearShorts();
         AplicationInstance.instance.loadingManager.LoadSceneAction(sceneMenu.name);
     }
     public void Resent()
     {
+        ClearShorts();
         AplicationInstance.instance.loadingManager.LoadSceneAction(sceneThis.name);
     }
 

@@ -120,7 +120,7 @@ public class BallControl : MonoBehaviour
         Vector3 direction = (horizontalWorldPoint - transform.position).normalized;
         float strength = Vector3.Distance(transform.position, horizontalWorldPoint);
         rb.AddForce(direction * strength * shotPower,ForceMode.Impulse);
-        St_ControlGamplay.CleraShorts(1);
+        St_ControlGamplay.AddShorts(1);
         isIdle = false;
         isClickBall = false;
     }

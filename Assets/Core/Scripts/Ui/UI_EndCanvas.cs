@@ -46,6 +46,6 @@ public class UI_EndCanvas : MonoBehaviour
 
     void ClearShorts()
     {
-        St_ControlGamplay.scorre = 0;
+        St_ControlGamplay.CleraShorts();
     }
 }
